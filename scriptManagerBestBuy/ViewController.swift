@@ -20,11 +20,11 @@ class ViewController: NSViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        AF.download("https://marketplace.bestbuy.ca/api/offers/export",parameters: ["api_key": "333281a3-8a7a-4cca-a415-f73f3089b8af"]).response {
+        AF.download("https://marketplace.bestbuy.ca/api/offers/export",parameters: ["api_key": "e417af22-e80f-4dd6-953f-03c34f3a44d7"]).response {
             result in
             let url = result.fileURL!
             
-            AF.request("https://marketplace.bestbuy.ca/api/offers", parameters: ["api_key": "ca9d298c-3101-47c1-82bd-fd206411dd80"])
+            AF.request("https://marketplace.bestbuy.ca/api/offers", parameters: ["api_key": "e417af22-e80f-4dd6-953f-03c34f3a44d7"])
                 .responseJSON { json in
                     let data = json.data
                     let decoder = JSONDecoder()
@@ -37,6 +37,7 @@ class ViewController: NSViewController {
                         self.background = NSView(frame: self.view.frame)
                         self.background?.wantsLayer = true
                         self.background?.layer?.backgroundColor = .white
+
                         
                         self.offersButton = NSButton(frame: NSRect(x: 10, y: self.view.frame.maxY - self.view.frame.height/2, width: self.view.frame.width/2 - 10, height: self.view.frame.height/2 - 10))
                         
@@ -51,15 +52,15 @@ class ViewController: NSViewController {
                         self.view.addSubview(self.background!)
                         self.view.addSubview(self.offersButton!)
                         
-                        self.totalCountLabel = NSTextField(frame: NSRect(x: 20, y: self.view.frame.height - 120, width: 100, height: 100))
+                        self.totalCountLabel = NSTextField(frame: NSRect(x: 20, y: self.view.frame.height - 120, width: self.offersButton!.frame.width, height: 107))
                         
-                        self.totalCountLabel?.stringValue = "\(self.totalCount!)"
+                        self.totalCountLabel?.stringValue = "\(self.totalCount!) Offers"
                         self.totalCountLabel?.isBezeled = false
                         self.totalCountLabel?.drawsBackground = false
                         self.totalCountLabel?.isEditable = false
                         self.totalCountLabel?.isSelectable = false
                         self.totalCountLabel?.textColor = .white
-                        self.totalCountLabel?.font = NSFont(name: "Myriad Pro", size: 40)
+                        self.totalCountLabel?.font = NSFont(name: "Kailasa", size: 40)
                         
                         self.view.addSubview(self.totalCountLabel!)
                         
