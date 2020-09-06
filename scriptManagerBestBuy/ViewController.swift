@@ -16,6 +16,9 @@ class ViewController: NSViewController {
     var totalCountLabel:NSTextField?
     var totalCount:Int?
     
+    @IBOutlet weak var offerTableHeaders: NSTableHeaderView!
+    
+    @IBOutlet weak var offerTable: NSScrollView!
     
     
     override func viewDidLoad() {
@@ -64,6 +67,8 @@ class ViewController: NSViewController {
                         
                         self.view.addSubview(self.totalCountLabel!)
                         
+                
+                        
                         let file = try NSString(contentsOf: url, encoding: String.Encoding.utf8.rawValue)
                         
                         
@@ -100,7 +105,9 @@ class ViewController: NSViewController {
 
             NSAnimationContext.current.duration = 1.0
             
-            self.view.animator().alphaValue = 0.0
+            self.background!.animator().alphaValue = 0.0
+            self.offersButton!.animator().alphaValue = 0.0
+            self.totalCountLabel?.animator().frame = NSRect(x: 20, y: self.view.frame.height - 120, width: self.offersButton!.frame.width, height: 107)
         }
         
     }

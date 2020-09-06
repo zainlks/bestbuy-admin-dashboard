@@ -11,6 +11,7 @@
 		3445A28624FC9CA400813062 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3445A28524FC9CA400813062 /* ViewController.swift */; };
 		3445A28824FC9CA500813062 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3445A28724FC9CA500813062 /* Assets.xcassets */; };
 		3445A28B24FC9CA500813062 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3445A28924FC9CA500813062 /* Main.storyboard */; };
+		3453EA03250576620085EB39 /* scriptController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3453EA02250576620085EB39 /* scriptController.swift */; };
 		347896712504A7E600DD8EB1 /* OfferResults.swift in Sources */ = {isa = PBXBuildFile; fileRef = 347896702504A7E500DD8EB1 /* OfferResults.swift */; };
 		8EEC6338A23D09722AC0A44E /* Pods_scriptManagerBestBuy.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB7818391094618A91C9B907 /* Pods_scriptManagerBestBuy.framework */; };
 /* End PBXBuildFile section */
@@ -23,6 +24,7 @@
 		3445A28A24FC9CA500813062 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3445A28C24FC9CA500813062 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3445A28D24FC9CA500813062 /* scriptManagerBestBuy.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = scriptManagerBestBuy.entitlements; sourceTree = "<group>"; };
+		3453EA02250576620085EB39 /* scriptController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = scriptController.swift; sourceTree = "<group>"; };
 		347896702504A7E500DD8EB1 /* OfferResults.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OfferResults.swift; sourceTree = "<group>"; };
 		9E4347387681858206447DA0 /* Pods-scriptManagerBestBuy.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-scriptManagerBestBuy.release.xcconfig"; path = "Target Support Files/Pods-scriptManagerBestBuy/Pods-scriptManagerBestBuy.release.xcconfig"; sourceTree = "<group>"; };
 		AB7818391094618A91C9B907 /* Pods_scriptManagerBestBuy.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_scriptManagerBestBuy.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -64,6 +66,7 @@
 			children = (
 				3445A28324FC9CA400813062 /* AppDelegate.swift */,
 				347896702504A7E500DD8EB1 /* OfferResults.swift */,
+				3453EA02250576620085EB39 /* scriptController.swift */,
 				3445A28524FC9CA400813062 /* ViewController.swift */,
 				3445A28724FC9CA500813062 /* Assets.xcassets */,
 				3445A28924FC9CA500813062 /* Main.storyboard */,
@@ -206,6 +209,7 @@
 			files = (
 				3445A28624FC9CA400813062 /* ViewController.swift in Sources */,
 				347896712504A7E600DD8EB1 /* OfferResults.swift in Sources */,
+				3453EA03250576620085EB39 /* scriptController.swift in Sources */,
 				3445A28424FC9CA400813062 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
